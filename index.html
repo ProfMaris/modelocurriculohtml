@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="openModal('presentation')">Apresentação</a></li>
+                    <li><a href="#" onclick="openModal('courses')">Cursos</a></li>
+                    <li><a href="#" onclick="openModal('school-history')">Histórico Escolar</a></li>
+                    <li><a href="#" onclick="openModal('letter')">Carta</a></li>
+                </ul>
+            </nav>
+            <h1>Seu Nome</h1>
+            <p>Desenvolvedor Web | Designer</p>
+            <p>Email: seuemail@example.com | Telefone: (99) 99999-9999</p>
+            <div class="profile-image">
+                <img src="sua-imagem.jpg" alt="Sua Foto">
+            </div>
+        </header>
+
+        <section class="section">
+            <h2>Experiência Profissional</h2>
+            <div class="job">
+                <h3>Desenvolvedor Web</h3>
+                <p>Empresa ABC</p>
+                <p><em>Jan 2021 - Presente</em></p>
+                <ul>
+                    <li>Desenvolvimento de aplicações web utilizando HTML, CSS, JavaScript e React.</li>
+                    <li>Colaboração com equipes de design e back-end para criar soluções eficientes.</li>
+                </ul>
+            </div>
+            <div class="job">
+                <h3>Estagiário em Design</h3>
+                <p>Empresa XYZ</p>
+                <p><em>Jul 2020 - Dez 2020</em></p>
+                <ul>
+                    <li>Criação de layouts responsivos e atraentes para websites.</li>
+                    <li>Auxílio na criação de materiais gráficos para campanhas de marketing.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Educação</h2>
+            <div class="education">
+                <h3>Bacharelado em Ciência da Computação</h3>
+                <p>Universidade de Exemplo</p>
+                <p><em>2017 - 2021</em></p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Habilidades</h2>
+            <ul class="skills">
+                <li>HTML/CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Design Gráfico</li>
+                <li>Git/GitHub</li>
+            </ul>
+        </section>
+    </div>
+
+    <!-- Modais -->
+    <div id="presentation" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('presentation')">&times;</span>
+            <h2>Apresentação</h2>
+            <p>Conteúdo da Apresentação...</p>
+        </div>
+    </div>
+
+    <div id="courses" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('courses')">&times;</span>
+            <h2>Cursos</h2>
+            <p>Conteúdo dos Cursos...</p>
+        </div>
+    </div>
+
+    <div id="school-history" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('school-history')">&times;</span>
+            <h2>Histórico Escolar</h2>
+            <p>Conteúdo do Histórico Escolar...</p>
+        </div>
+    </div>
+
+    <div id="letter" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('letter')">&times;</span>
+            <h2>Carta</h2>
+            <p>Conteúdo da Carta...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
